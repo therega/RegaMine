@@ -1,9 +1,12 @@
-name: WaterFarmer
-author: [WaterStorm]
-version: 1.0
-main: fun.rega.WaterFarmer.Main
+name: RegaMine
+main: fun.rega.RegaMine.Main
+version: 1.0.0
+author: TheRega
+website: (vk.com/therega)
 depend: [WorldEdit, WorldGuard, TitleManager, LuckPerms, Vault]
+
+
 commands:
-    wfarmer:
+    rmine:
         description: Main executions sub commands.
-        aliases: [wf, farmer]
+        aliases: [rm, mine,regamine]
