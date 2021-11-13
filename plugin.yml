@@ -1,0 +1,9 @@
+name: WaterFarmer
+author: [WaterStorm]
+version: 1.0
+main: fun.rega.WaterFarmer.Main
+depend: [WorldEdit, WorldGuard, TitleManager, LuckPerms, Vault]
+commands:
+    wfarmer:
+        description: Main executions sub commands.
+        aliases: [wf, farmer]

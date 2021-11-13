@@ -1,0 +1,142 @@
+setblock: cobblestone
+
+resoures:
+  drop: false
+  straight: false
+  
+exp: false
+
+block-break:
+  enable: true
+  message: "actionbar:&cВы не можете ломать блоки в шахте."
+  
+drops-exp: false
+
+block-place:
+  enable: true
+  message: "actionbar:&cВы не можете ставить блоки в шахте."
+  
+checks:
+  gamemode:
+    enable: true
+    modes:
+      - creative
+      - spectator
+    setmode: survival
+    message: "actionbar:&cВы не можете пользоваться авто-шахтой в этом режиме игры."
+  fly:
+    enable: true
+    message: "actionbar:&cВы не можете пользоваться авто-шахтой в режиме полёта."
+    
+messages:
+  prefix: "&e&luMine §8▪ &f"
+  
+  commandmanager:
+    no_commands: Для вас нет доступных команд.
+    title_help: "Список команд:"
+    command_not_found: Неизвестная команда.
+    error: "&cЭта команда вызвала ошибку."
+    no_permission: "&cНедостаточно прав."
+    
+  create:
+    usage: "&e/umine create <название> &f- Создать авто-шахту"
+    no_selection: Пожалуйста выделите территорию для создание авто-шахты
+    already: "&cДанная авто-шахта уже существует, придумайте другое название."
+    complete: "Авто-шахта сохранена.;title:  &e&luMine %nl% Авто-шахта сохранена."
+    
+  remove:
+    usage: "&e/umine remove <название> &f- Удалить авто-шахту"
+    not-found: "&cДанной авто-шахты не существует."
+    complete: "&aАвто-шахта успешно удалена."
+    
+  reset:
+    usage: "&e/wmine resetall &f- Перезагрузить все блоки в авто-шахте"
+    complete: "&aБлоки перезагружены."
+    
+  setsalary:
+    usage: "&e/umine setsalary <игрок> <зарплата> &f- Установить зарплату игроку"
+    player-notfound: "&cИгрок не найден."
+    double-exception: "&cНеверное число."
+    complete: "Игроку &e%player% &fустановлена зарплата: &e%salary%$"
+    
+  addsalary:
+    usage: "&e/umine addsalary <игрок> <зарплата> &f- Добавить зарплату игроку"
+    player-notfound: "&cИгрок не найден."
+    double-exception: "&cНеверное число."
+    complete: >-
+      Игроку &e%player% &fдобавлена зарплата, его зарплата составляет:
+      &e%salary%$
+      
+  takesalary:
+    usage: "&e/umine takesalary <игрок> <зарплата> &f- Убавить зарплату игроку"
+    player-notfound: "&cИгрок не найден."
+    double-exception: "&cНеверное число."
+    complete: >-
+      Игроку &e%player% &fубавлена зарплата, его зарплата составляет:
+      &e%salary%$
+      
+  salary:
+    usage: "&e/umine salary &f- Получить зарплату"
+    complete: "title:&aУспешно%nl%Вы получили зарплату в размере &e%salary%$"
+    low: "title:&cОшибка%nl%Для получения зарплаты нужно добыть руду."
+    
+  block:
+    complete: "actionbar:&l&f+ &e%earn%$"
+    full: "actionbar:&cПридурок ты забил рюкзак"
+    
+ores:
+  coal_ore:
+    money: 1
+    update: 5
+    
+  iron_ore:
+    money: 2
+    update: 10
+    
+  gold_ore:
+    money: 3
+    update: 15
+    
+  lapis_ore:
+    money: 3
+    update: 15
+    
+  redstone_ore:
+    money: 4
+    update: 20
+    
+  emerald_ore:
+    money: 5
+    update: 30
+    
+  diamond_ore:
+    money: 5
+    update: 30
+
+# обновление ёпта
+
+groups:
+  default:
+    max: 20
+    booster: 1.0
+  vip:
+    max: 30
+    booster: 2.0
+    
+scoreboard:
+  title: "&6Шахта"
+  values:
+  - "&d&l&m┏  &7"
+  - "&d&l| Уголь: %coal_ore%"
+  - "&d&l| Железо: %iron_ore%"
+  - "&d&l| Золото: %gold_ore%"
+  - "&d&l| Алмазы: %diamond_ore%"
+  - "&d&l| Изумруды: %emerald_ore%"
+  - "&d&l| Лазурит: %lapis_ore%"
+  - "&d&l| Редстоун: %redstone_ore%"
+  - "&d&l&m├  &5"
+  - "&d&l| &7Рюкзак: %backpackCurrent% / %backpackMax%"
+  - "&d&l| &dЗарплата: %salary%&7 &8(x%booster%&8)"
+  - "&d&l&m├  &d"
+  - "&d&l| &7Не забудь сдать руду!"
+  - "&d&l&m┗  &1"
