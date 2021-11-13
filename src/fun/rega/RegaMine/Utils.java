@@ -1,4 +1,4 @@
-package fun.rega.WaterFarmer;
+package fun.rega.RegaMine;
 
 
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 
-import fun.rega.WaterFarmer.mines.MinePlayer;
+import fun.rega.RegaMine.mines.MinePlayer;
 import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.configuration.file.*;
 import org.bukkit.*;
