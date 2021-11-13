@@ -1,3 +1,8 @@
+#Плагин разработал TheRega.
+#Если Вы обнаружите какой-либо баг, незамедлительно сообщите нам.
+#Vk: vk.com/therega, группа: vk.com/waterstudio_ru
+
+
 setblock: cobblestone
 
 resoures:
@@ -29,7 +34,7 @@ checks:
     message: "actionbar:&cВы не можете пользоваться авто-шахтой в режиме полёта."
     
 messages:
-  prefix: "&e&luMine §8▪ &f"
+  prefix: "&6Шахта &7> &f"
   
   commandmanager:
     no_commands: Для вас нет доступных команд.
@@ -39,44 +44,40 @@ messages:
     no_permission: "&cНедостаточно прав."
     
   create:
-    usage: "&e/umine create <название> &f- Создать авто-шахту"
+    usage: "&e/regamine create <название> &f- Создать авто-шахту"
     no_selection: Пожалуйста выделите территорию для создание авто-шахты
     already: "&cДанная авто-шахта уже существует, придумайте другое название."
-    complete: "Авто-шахта сохранена.;title:  &e&luMine %nl% Авто-шахта сохранена."
+    complete: "Авто-шахта сохранена.;title:  &6&lШахта %nl% Авто-шахта сохранена."
     
   remove:
-    usage: "&e/umine remove <название> &f- Удалить авто-шахту"
+    usage: "&e/regamine remove <название> &f- Удалить авто-шахту"
     not-found: "&cДанной авто-шахты не существует."
     complete: "&aАвто-шахта успешно удалена."
     
   reset:
-    usage: "&e/wmine resetall &f- Перезагрузить все блоки в авто-шахте"
+    usage: "&e/regamine resetall &f- Перезагрузить все блоки в авто-шахте"
     complete: "&aБлоки перезагружены."
     
   setsalary:
-    usage: "&e/umine setsalary <игрок> <зарплата> &f- Установить зарплату игроку"
-    player-notfound: "&cИгрок не найден."
-    double-exception: "&cНеверное число."
-    complete: "Игроку &e%player% &fустановлена зарплата: &e%salary%$"
+    usage: "&e/regamine setsalary <игрок> <зарплата> &f- Установить зарплату игроку"
+    player-notfound: "Игрок не найден."
+    double-exception: "Неверное число."
+    complete: "Игроку &c%player% &fустановлена зарплата: &c%salary%$"
     
   addsalary:
-    usage: "&e/umine addsalary <игрок> <зарплата> &f- Добавить зарплату игроку"
-    player-notfound: "&cИгрок не найден."
-    double-exception: "&cНеверное число."
-    complete: >-
-      Игроку &e%player% &fдобавлена зарплата, его зарплата составляет:
-      &e%salary%$
-      
+    usage: "&c/regamine addsalary <игрок> <зарплата> &f- Добавить зарплату игроку"
+    player-notfound: "Игрок не найден."
+    double-exception: "Неверное число."
+    complete: "Игроку &c%player% &fдобавлена зарплата, его зарплата составляет: &c%salary%$"
+    
   takesalary:
-    usage: "&e/umine takesalary <игрок> <зарплата> &f- Убавить зарплату игроку"
-    player-notfound: "&cИгрок не найден."
-    double-exception: "&cНеверное число."
-    complete: >-
-      Игроку &e%player% &fубавлена зарплата, его зарплата составляет:
-      &e%salary%$
-      
+    usage: "&c/regamine takesalary <игрок> <зарплата> &f- Убавить зарплату игроку"
+    player-notfound: "Игрок не найден."
+    double-exception: "Неверное число."
+    complete: "Игроку &c%player% &fубавлена зарплата, его зарплата составляет: &c%salary%$"
+    
   salary:
-    usage: "&e/umine salary &f- Получить зарплату"
+    usage: "&e/regamine salary &f- Получить зарплату"
     complete: "title:&aУспешно%nl%Вы получили зарплату в размере &e%salary%$"
     low: "title:&cОшибка%nl%Для получения зарплаты нужно добыть руду."
     
@@ -119,24 +120,45 @@ groups:
   default:
     max: 20
     booster: 1.0
-  vip:
+  silver:
+    max: 25
+    booster: 1.5
+  elder:
     max: 30
     booster: 2.0
+  junior:
+    max: 35
+    booster: 2.0
+  legend:
+    max: 40
+    booster: 2.0
+  overlord:
+    max: 45
+    booster: 2.5
+  neon:
+    max: 50
+    booster: 2.5
+  furry:
+    max: 55
+    booster: 2.5
+  dejavu:
+    max: 60
+    booster: 2.5
     
 scoreboard:
-  title: "&6Шахта"
+  title: "&6&lШАХТА"
   values:
-  - "&d&l&m┏  &7"
-  - "&d&l| Уголь: %coal_ore%"
-  - "&d&l| Железо: %iron_ore%"
-  - "&d&l| Золото: %gold_ore%"
-  - "&d&l| Алмазы: %diamond_ore%"
-  - "&d&l| Изумруды: %emerald_ore%"
-  - "&d&l| Лазурит: %lapis_ore%"
-  - "&d&l| Редстоун: %redstone_ore%"
-  - "&d&l&m├  &5"
-  - "&d&l| &7Рюкзак: %backpackCurrent% / %backpackMax%"
-  - "&d&l| &dЗарплата: %salary%&7 &8(x%booster%&8)"
-  - "&d&l&m├  &d"
-  - "&d&l| &7Не забудь сдать руду!"
-  - "&d&l&m┗  &1"
+  - "&6&m┏  &7"
+  - "&6| &8Уголь&7: &f%coal_ore%"
+  - "&6| &fЖелезо&7: &f%iron_ore%"
+  - "&6| &eЗолото&7: &f%gold_ore%"
+  - "&6| &3Алмазы&7: &f%diamond_ore%"
+  - "&6| &aИзумруды&7: &f%emerald_ore%"
+  - "&6| &bЛазурит&7: &f%lapis_ore%"
+  - "&6| &cРедстоун&7: &f%redstone_ore%"
+  - "&6&m├  &5"
+  - "&6| &7Рюкзак: %backpackCurrent% / %backpackMax%"
+  - "&6| &dЗарплата: &a%salary%&7 &8(x%booster%&8)"
+  - "&6&m├  &d"
+  - "&6| &7Не забудь сдать руду!"
+  - "&6&m┗  &1"
