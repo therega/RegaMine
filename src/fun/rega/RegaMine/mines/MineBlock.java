@@ -1,4 +1,4 @@
-package fun.rega.WaterFarmer.mines;
+package fun.rega.RegaMine.mines;
 
 import java.text.DecimalFormat;
 import org.bukkit.Material;
