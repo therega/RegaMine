@@ -1,4 +1,4 @@
-package fun.rega.WaterFarmer.commands;
+package fun.rega.RegaMine.commands;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -7,7 +7,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import fun.rega.WaterFarmer.Utils;
+import fun.rega.RegaMine.Utils;
 
 public class CommandManager implements CommandExecutor {
 
