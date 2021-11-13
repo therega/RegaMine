@@ -1,4 +1,4 @@
-package fun.rega.WaterFarmer;
+package fun.rega.RegaMine;
 
 import java.io.File;
 import java.io.IOException;
