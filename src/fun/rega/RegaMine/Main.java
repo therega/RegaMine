@@ -1,4 +1,4 @@
-package fun.rega.WaterFarmer;
+package fun.rega.RegaMine;
 
 import com.sk89q.worldedit.bukkit.WorldEditPlugin;
 import io.puharesource.mc.titlemanager.api.v2.TitleManagerAPI;
@@ -7,12 +7,12 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
-import fun.rega.WaterFarmer.commands.CommandManager;
-import fun.rega.WaterFarmer.events.BlockListener;
-import fun.rega.WaterFarmer.events.MoveListener;
-import fun.rega.WaterFarmer.exceptions.VaultNotFound;
-import fun.rega.WaterFarmer.mines.MineManager;
-import fun.rega.WaterFarmer.mines.Mines;
+import fun.rega.RegaMine.commands.CommandManager;
+import fun.rega.RegaMine.events.BlockListener;
+import fun.rega.RegaMine.events.MoveListener;
+import fun.rega.RegaMine.exceptions.VaultNotFound;
+import fun.rega.RegaMine.mines.MineManager;
+import fun.rega.RegaMine.mines.Mines;
 
 public class Main extends JavaPlugin {
 	private static Main instance;
@@ -26,15 +26,13 @@ public class Main extends JavaPlugin {
 	      return this.tmapi;
 	   }
 
-	   // $FF: synthetic method
-	   // $FF: bridge method
 	   public void onEnable() {
-	      Bukkit.getConsoleSender().sendMessage("§6WaterFarmer special for WaterStorm by TheRega");
+	      Bukkit.getConsoleSender().sendMessage("Â§6RegaMine made by Â§cTheRega");
 	      instance = this;
 	      Mines.loadBlocks();
 	      msg();
 	      this.tmapi = (TitleManagerAPI)this.getServer().getPluginManager().getPlugin("TitleManager");
-	      this.getCommand("wfarmer").setExecutor(new CommandManager());
+	      this.getCommand("rmine").setExecutor(new CommandManager());
 	      this.getServer().getPluginManager().registerEvents(new BlockListener(), this);
 	      this.getServer().getPluginManager().registerEvents(new MoveListener(this.getConfig()), this);
 
@@ -48,13 +46,13 @@ public class Main extends JavaPlugin {
 
   
   private static void msg() {
-    Logger.clear("§e-----------------------------------------------------------");
-    Logger.clear("§r");
-    Logger.clear("§f  §cWaterFarmer §8 | §fversion: Â§d1.0");
-    Logger.clear("§f §aspecil for: §eWaterStorm");
-    Logger.clear("§f plugin made by: §eTheRega");
-    Logger.clear("§r");
-    Logger.clear("§e-----------------------------------------------------------");
+    Logger.clear("Â§e-----------------------------------------------------------");
+    Logger.clear("Â§r");
+    Logger.clear("Â§f   Â§cRegaMine Â§8 | Â§fversion: Â§81.0");
+    Logger.clear("Â§f Â§aspecial for: Â§eWaterStorm");
+    Logger.clear("Â§f Â§eplugin made by: Â§bTheRega");
+    Logger.clear("Â§r");
+    Logger.clear("Â§e-----------------------------------------------------------");
   }
   
   public void onDisable() {
