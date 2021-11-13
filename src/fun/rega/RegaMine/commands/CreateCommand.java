@@ -1,10 +1,10 @@
-package fun.rega.WaterFarmer.commands;
+package fun.rega.RegaMine.commands;
 
 import com.sk89q.worldedit.bukkit.selections.Selection;
 import org.bukkit.entity.Player;
-import fun.rega.WaterFarmer.Main;
-import fun.rega.WaterFarmer.Utils;
-import fun.rega.WaterFarmer.mines.Mines;
+import fun.rega.RegaMine.Main;
+import fun.rega.RegaMine.Utils;
+import fun.rega.RegaMine.mines.Mines;
 
 public class CreateCommand extends Sub {
   public boolean execute(Player player, String[] args) {
@@ -31,7 +31,7 @@ public class CreateCommand extends Sub {
   }
   
   public String permission() {
-    return "umine.command.create";
+    return "regamine.command.create";
   }
   
   public String description() {
