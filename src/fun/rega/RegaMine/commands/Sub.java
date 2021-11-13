@@ -1,7 +1,7 @@
-package fun.rega.WaterFarmer.commands;
+package fun.rega.RegaMine.commands;
 
 import org.bukkit.entity.Player;
-import fun.rega.WaterFarmer.Utils;
+import fun.rega.RegaMine.Utils;
 
 public abstract class Sub extends Utils {
 
