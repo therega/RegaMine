@@ -1,6 +1,6 @@
 # RegaMine
 
-[![download](https://img.shields.io/github/downloads/therega/RegaAuthServer/v1.0.0-BETA/total?color=009900&logo=github&logoColor=ff2b2b)](https://github.com/therega/RegaAuthServer/releases/download/v1.0.0-BETA/RegaAuthServer.jar)
+[![download](https://img.shields.io/github/downloads/therega/RegaMine/v1.0.0-BETA/total?color=009900&logo=github&logoColor=ff2b2b)](https://github.com/therega/RegaMine/releases/download/v1.0.0-BETA/RegaMine.jar)
 [![discord](https://img.shields.io/discord/726192072641478686?color=8000ff&label=discord&logo=discord&style=plastic)](https://discord.gg/kc7Tqfm)
 
 RegaMine - это полностью кастомизированный плаг на авто-шахту.
