@@ -1,9 +1,9 @@
-package fun.rega.WaterFarmer.commands;
+package fun.rega.RegaMine.commands;
 
 import org.bukkit.entity.Player;
-import fun.rega.WaterFarmer.Money;
-import fun.rega.WaterFarmer.Utils;
-import fun.rega.WaterFarmer.mines.MinePlayer;
+import fun.rega.RegaMine.Money;
+import fun.rega.RegaMine.Utils;
+import fun.rega.RegaMine.mines.MinePlayer;
 
 public class SalaryCommand
   extends Sub {
@@ -28,7 +28,7 @@ public class SalaryCommand
 	   }
 
 	   public String permission() {
-	      return "umine.command.salary";
+	      return "regamine.command.salary";
 	   }
 
 	   public String description() {
