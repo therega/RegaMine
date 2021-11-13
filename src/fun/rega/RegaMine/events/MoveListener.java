@@ -1,4 +1,4 @@
-package fun.rega.WaterFarmer.events;
+package fun.rega.RegaMine.events;
 
 import com.google.common.collect.Maps;
 import java.util.List;
@@ -13,11 +13,11 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitTask;
-import fun.rega.WaterFarmer.Checks;
-import fun.rega.WaterFarmer.Main;
-import fun.rega.WaterFarmer.Utils;
-import fun.rega.WaterFarmer.mines.MinePlayer;
-import fun.rega.WaterFarmer.mines.Mines;
+import fun.rega.RegaMine.Checks;
+import fun.rega.RegaMine.Main;
+import fun.rega.RegaMine.Utils;
+import fun.rega.RegaMine.mines.MinePlayer;
+import fun.rega.RegaMine.mines.Mines;
 
 public class MoveListener
   implements Listener
