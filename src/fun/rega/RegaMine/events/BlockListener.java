@@ -1,4 +1,4 @@
-package fun.rega.WaterFarmer.events;
+package fun.rega.RegaMine.events;
 
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -7,12 +7,12 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.inventory.ItemStack;
-import fun.rega.WaterFarmer.Money;
-import fun.rega.WaterFarmer.Utils;
-import fun.rega.WaterFarmer.mines.MineBlock;
-import fun.rega.WaterFarmer.mines.MineManager;
-import fun.rega.WaterFarmer.mines.MinePlayer;
-import fun.rega.WaterFarmer.mines.Mines;
+import fun.rega.RegaMine.Money;
+import fun.rega.RegaMine.Utils;
+import fun.rega.RegaMine.mines.MineBlock;
+import fun.rega.RegaMine.mines.MineManager;
+import fun.rega.RegaMine.mines.MinePlayer;
+import fun.rega.RegaMine.mines.Mines;
 
 public class BlockListener
   implements Listener
@@ -23,7 +23,7 @@ public class BlockListener
       if (MineManager.getBlock(e.getBlock().getLocation()) != null && e.getBlock().getType() == Material.getMaterial(Utils.getConfig().getString("setblock").toUpperCase())) {
         e.setCancelled(true);
       } else if (Mines.getBlock(e.getBlock().getType()) == null) {
-        if (!e.getPlayer().hasPermission("umine.breakblocks") && Utils.getConfig().getBoolean("block-break.enable")) {
+        if (!e.getPlayer().hasPermission("regamine.breakblocks") && Utils.getConfig().getBoolean("block-break.enable")) {
           Utils.sendMessage(e.getPlayer(), Utils.getConfig().getString("block-break.message"));
           e.setCancelled(true);
         }
@@ -66,7 +66,7 @@ public class BlockListener
   
   @EventHandler
   public void onPlace(BlockPlaceEvent e) {
-    if (!e.getPlayer().hasPermission("umine.placeblocks") && Utils.getConfig().getBoolean("block-place.enable") && Mines.getMine(e.getBlock().getLocation())) {
+    if (!e.getPlayer().hasPermission("regamine.placeblocks") && Utils.getConfig().getBoolean("block-place.enable") && Mines.getMine(e.getBlock().getLocation())) {
       Utils.sendMessage(e.getPlayer(), Utils.getConfig().getString("block-place.message"));
       e.setCancelled(true);
     } 
