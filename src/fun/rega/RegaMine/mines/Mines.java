@@ -1,4 +1,4 @@
-package fun.rega.WaterFarmer.mines;
+package fun.rega.RegaMine.mines;
 
 import com.sk89q.worldedit.bukkit.selections.Selection;
 import java.util.ArrayList;
@@ -9,8 +9,8 @@ import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.configuration.file.FileConfiguration;
-import fun.rega.WaterFarmer.Config;
-import fun.rega.WaterFarmer.Utils;
+import fun.rega.RegaMine.Config;
+import fun.rega.RegaMine.Utils;
 
 public class Mines {
   private static FileConfiguration config;
