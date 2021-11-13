@@ -1,12 +1,12 @@
-package fun.rega.WaterFarmer.mines;
+package fun.rega.RegaMine.mines;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
-import fun.rega.WaterFarmer.Main;
-import fun.rega.WaterFarmer.Utils;
+import fun.rega.RegaMine.Main;
+import fun.rega.RegaMine.Utils;
 
 public class MineBlockUpdate
   extends BukkitRunnable {
