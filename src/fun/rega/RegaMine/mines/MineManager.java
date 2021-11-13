@@ -1,10 +1,11 @@
-package fun.rega.WaterFarmer.mines;
+package fun.rega.RegaMine.mines;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import org.bukkit.Location;
 import org.bukkit.plugin.Plugin;
-import fun.rega.WaterFarmer.Main;
+import fun.rega.RegaMine.Main;
 
 public class MineManager {
   private static HashMap blocks = new HashMap<>();
