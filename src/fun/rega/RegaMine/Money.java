@@ -1,4 +1,4 @@
-package fun.rega.WaterFarmer;
+package fun.rega.RegaMine;
 
 import java.text.DecimalFormat;
 import java.util.HashMap;
@@ -6,7 +6,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.RegisteredServiceProvider;
-import fun.rega.WaterFarmer.exceptions.VaultNotFound;
+import fun.rega.RegaMine.exceptions.VaultNotFound;
 import net.milkbowl.vault.economy.Economy;
 
 public class Money {
