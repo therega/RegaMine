@@ -1,4 +1,4 @@
-package fun.rega.WaterFarmer.mines;
+package fun.rega.RegaMine.mines;
 
 import com.google.common.collect.Maps;
 import java.util.Iterator;
@@ -6,8 +6,8 @@ import java.util.Map;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
-import fun.rega.WaterFarmer.Config;
-import fun.rega.WaterFarmer.Money;
+import fun.rega.RegaMine.Config;
+import fun.rega.RegaMine.Money;
 
 
 
