@@ -1,4 +1,4 @@
-package fun.rega.WaterFarmer.exceptions;
+package fun.rega.RegaMine.exceptions;
 
 public class VaultNotFound extends Exception {
 
