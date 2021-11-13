@@ -1,4 +1,4 @@
-package fun.rega.WaterFarmer.mines;
+package fun.rega.RegaMine.mines;
 
 import org.bukkit.Location;
 import org.bukkit.World;
