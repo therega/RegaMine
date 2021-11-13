@@ -1,8 +1,8 @@
-package fun.rega.WaterFarmer.commands;
+package fun.rega.RegaMine.commands;
 
 import org.bukkit.entity.Player;
-import fun.rega.WaterFarmer.Utils;
-import fun.rega.WaterFarmer.mines.MineManager;
+import fun.rega.RegaMine.Utils;
+import fun.rega.RegaMine.mines.MineManager;
 
 public class ResetAllCommand extends Sub {
   public boolean execute(Player player, String[] args) {
@@ -16,7 +16,7 @@ public class ResetAllCommand extends Sub {
   }
   
   public String permission() {
-    return "wmines.command.resetall";
+    return "regamine.command.resetall";
   }
   
   public String description() {
