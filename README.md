@@ -3,7 +3,7 @@
 [![download](https://img.shields.io/github/downloads/therega/RegaMine/v1.0.0-BETA/total?color=009900&logo=github&logoColor=ff2b2b)](https://github.com/therega/RegaMine/releases/download/v1.0.0-BETA/RegaMine.jar)
 [![discord](https://img.shields.io/discord/726192072641478686?color=8000ff&label=discord&logo=discord&style=plastic)](https://discord.gg/kc7Tqfm)
 
-RegaMine - это полностью кастомизированный плаг на авто-шахту.
+RegaMine - это полностью кастомизированный плагин на авто-шахту.
 Подойдет для каждого сервера, т.к. можно настроить любую функцию под себя.
 Настройка выпдачи денег, ресурсов, опыта. Настройка сообщений, лимитв для привилегий и scoreboard.
 
