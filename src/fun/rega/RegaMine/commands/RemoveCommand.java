@@ -1,8 +1,8 @@
-package fun.rega.WaterFarmer.commands;
+package fun.rega.RegaMine.commands;
 
 import org.bukkit.entity.Player;
-import fun.rega.WaterFarmer.Utils;
-import fun.rega.WaterFarmer.mines.Mines;
+import fun.rega.RegaMine.Utils;
+import fun.rega.RegaMine.mines.Mines;
 
 public class RemoveCommand extends Sub {
 
@@ -25,7 +25,7 @@ public class RemoveCommand extends Sub {
   }
   
   public String permission() {
-    return "umine.command.remove";
+    return "regamine.command.remove";
   }
   
   public String description() {
