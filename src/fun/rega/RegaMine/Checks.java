@@ -1,4 +1,4 @@
-package fun.rega.WaterFarmer;
+package fun.rega.RegaMine;
 
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
