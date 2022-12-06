@@ -5,7 +5,7 @@ import org.bukkit.entity.Player;
 
 public class Checks {
 	public static void check(final Player player) {
-        if (!player.hasPermission("umine.checks")) {
+        if (!player.hasPermission("rmine.checks")) {
             if ((player.getAllowFlight() || player.isFlying()) && Utils.getConfig().getBoolean("checks.fly.enable")) {
                 Utils.sendMessage(player, Utils.getConfig().getString("checks.fly.message"));
                 player.setAllowFlight(false);
